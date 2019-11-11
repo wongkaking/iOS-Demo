@@ -19,6 +19,7 @@
 		420DDA722322756100E5BA38 /* TableViewCell_block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420DDA712322756100E5BA38 /* TableViewCell_block.swift */; };
 		49163FC123253FAD00751F05 /* ViewController_Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49163FC023253FAD00751F05 /* ViewController_Tag.swift */; };
 		49163FC32325404400751F05 /* TableViewCell_tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49163FC22325404400751F05 /* TableViewCell_tag.swift */; };
+		EC5AAAFD3F0AAB03E58821B1 /* Pods_cellWithButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8167C3665750A0EA0C6484C1 /* Pods_cellWithButton.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,9 @@
 		420DDA712322756100E5BA38 /* TableViewCell_block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell_block.swift; sourceTree = "<group>"; };
 		49163FC023253FAD00751F05 /* ViewController_Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController_Tag.swift; sourceTree = "<group>"; };
 		49163FC22325404400751F05 /* TableViewCell_tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell_tag.swift; sourceTree = "<group>"; };
+		8167C3665750A0EA0C6484C1 /* Pods_cellWithButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cellWithButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AF5F74EC47D921650E501C4 /* Pods-cellWithButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cellWithButton.debug.xcconfig"; path = "Target Support Files/Pods-cellWithButton/Pods-cellWithButton.debug.xcconfig"; sourceTree = "<group>"; };
+		8E728D00A4FB7A402C961D34 /* Pods-cellWithButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cellWithButton.release.xcconfig"; path = "Target Support Files/Pods-cellWithButton/Pods-cellWithButton.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,17 +47,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC5AAAFD3F0AAB03E58821B1 /* Pods_cellWithButton.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06356E97ABBD8764C54F0822 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8AF5F74EC47D921650E501C4 /* Pods-cellWithButton.debug.xcconfig */,
+				8E728D00A4FB7A402C961D34 /* Pods-cellWithButton.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		420DDA492322679900E5BA38 = {
 			isa = PBXGroup;
 			children = (
 				420DDA542322679900E5BA38 /* cellWithButton */,
 				420DDA532322679900E5BA38 /* Products */,
+				06356E97ABBD8764C54F0822 /* Pods */,
+				E1F9C6752849BF0572CA49F7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +118,14 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		E1F9C6752849BF0572CA49F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8167C3665750A0EA0C6484C1 /* Pods_cellWithButton.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -108,9 +133,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 420DDA642322679B00E5BA38 /* Build configuration list for PBXNativeTarget "cellWithButton" */;
 			buildPhases = (
+				1822C1C1EFAD8EA955E18BBD /* [CP] Check Pods Manifest.lock */,
 				420DDA4E2322679900E5BA38 /* Sources */,
 				420DDA4F2322679900E5BA38 /* Frameworks */,
 				420DDA502322679900E5BA38 /* Resources */,
+				9EE9A2722FD79E059B66DCDB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -166,6 +193,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1822C1C1EFAD8EA955E18BBD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-cellWithButton-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EE9A2722FD79E059B66DCDB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-cellWithButton/Pods-cellWithButton-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-cellWithButton/Pods-cellWithButton-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-cellWithButton/Pods-cellWithButton-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		420DDA4E2322679900E5BA38 /* Sources */ = {
@@ -324,6 +393,7 @@
 		};
 		420DDA652322679B00E5BA38 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AF5F74EC47D921650E501C4 /* Pods-cellWithButton.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -343,6 +413,7 @@
 		};
 		420DDA662322679B00E5BA38 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E728D00A4FB7A402C961D34 /* Pods-cellWithButton.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

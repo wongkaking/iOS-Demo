@@ -1,0 +1,6 @@
+framework module Pods_cellWithButton {
+  umbrella header "Pods-cellWithButton-umbrella.h"
+
+  export *
+  module * { export * }
+}
