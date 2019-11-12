@@ -36,5 +36,4 @@ class TableViewCell_tag: UITableViewCell {
     func setupCell(_ content: String) {
         button.setTitle("\(content)", for: .normal)
     }
-
 }
