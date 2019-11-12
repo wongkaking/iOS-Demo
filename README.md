@@ -82,3 +82,12 @@ Block更加简洁，不需要定义繁琐的协议方法，但通信事件比较
 [Handling button tap inside UITableView Cell without using tag](https://fluffy.es/handling-button-tap-inside-uitableviewcell-without-using-tag/#closure)
 
 [你真的了解iOS代理设计模式吗？](https://www.jianshu.com/p/2113ffe54b30)
+
+
+# Cell with Checkbox and expand section
+- 每一个Cell前面会有一个Checkbox
+- 通过Checkbox来表示是否选择
+- 每个分类的Section可以收起或展开
+- 详情：https://www.jianshu.com/p/ed2eb270835c
+
+![最终效果](https://upload-images.jianshu.io/upload_images/13640702-c1546bad63159be1.gif?imageMogr2/auto-orient/strip)
