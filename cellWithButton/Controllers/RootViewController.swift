@@ -27,7 +27,6 @@ extension RootViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.selectionStyle = .none
         cell.textLabel?.text = model[indexPath.row]
         return cell
     }

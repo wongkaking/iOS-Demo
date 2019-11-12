@@ -56,7 +56,7 @@ class TableViewCell_checkbox: UITableViewCell {
         topicLabel.textColor = checkBoxButton.isSelected ? .selectedColor : .black
     }
 
-    func setupCell(model: CheckBoxRow) {
+    func setupCell(model: CheckBoxModel) {
         topicLabel.text = model.text
         checkBoxButton.isSelected = model.isChecked
         updateTextColor()
