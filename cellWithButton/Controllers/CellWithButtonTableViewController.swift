@@ -1,13 +1,13 @@
 import UIKit
 
-class RootTableViewController: UITableViewController {
+class CellWithButtonTableViewController: UITableViewController {
 
     let model = ["delegate", "block", "tag"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
-        navigationItem.title = "Root"
+        navigationItem.title = "cell with button"
         tableView.tableFooterView = UIView()
     }
 

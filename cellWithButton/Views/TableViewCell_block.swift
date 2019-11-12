@@ -44,5 +44,4 @@ class TableViewCell_block: UITableViewCell {
     @objc func tapButton() {
         buttonBlock?()
     }
-
 }
