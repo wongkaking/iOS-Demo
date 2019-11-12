@@ -22,6 +22,7 @@
 		42912D50237919C700A5A21B /* TableViewCell_checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42912D4F237919C700A5A21B /* TableViewCell_checkbox.swift */; };
 		42BFAFE8237A5D1C00F7DDF2 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BFAFE7237A5D1C00F7DDF2 /* Models.swift */; };
 		42BFAFEB237A692E00F7DDF2 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BFAFEA237A692E00F7DDF2 /* UIColor+Extension.swift */; };
+		42BFAFF1237A9CAD00F7DDF2 /* ExpandHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BFAFF0237A9CAD00F7DDF2 /* ExpandHeader.swift */; };
 		49163FC123253FAD00751F05 /* ViewController_Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49163FC023253FAD00751F05 /* ViewController_Tag.swift */; };
 		49163FC32325404400751F05 /* TableViewCell_tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49163FC22325404400751F05 /* TableViewCell_tag.swift */; };
 		EC5AAAFD3F0AAB03E58821B1 /* Pods_cellWithButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8167C3665750A0EA0C6484C1 /* Pods_cellWithButton.framework */; };
@@ -45,6 +46,7 @@
 		42912D4F237919C700A5A21B /* TableViewCell_checkbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell_checkbox.swift; sourceTree = "<group>"; };
 		42BFAFE7237A5D1C00F7DDF2 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		42BFAFEA237A692E00F7DDF2 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		42BFAFF0237A9CAD00F7DDF2 /* ExpandHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandHeader.swift; sourceTree = "<group>"; };
 		49163FC023253FAD00751F05 /* ViewController_Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController_Tag.swift; sourceTree = "<group>"; };
 		49163FC22325404400751F05 /* TableViewCell_tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell_tag.swift; sourceTree = "<group>"; };
 		8167C3665750A0EA0C6484C1 /* Pods_cellWithButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cellWithButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				42912D4F237919C700A5A21B /* TableViewCell_checkbox.swift */,
+				42BFAFF0237A9CAD00F7DDF2 /* ExpandHeader.swift */,
 			);
 			path = checkboxcell;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42BFAFF1237A9CAD00F7DDF2 /* ExpandHeader.swift in Sources */,
 				42912D4E2379176100A5A21B /* ExpandViewController.swift in Sources */,
 				42912D4C2379155F00A5A21B /* RootViewController.swift in Sources */,
 				420DDA6A2322684500E5BA38 /* SecViewController.swift in Sources */,
