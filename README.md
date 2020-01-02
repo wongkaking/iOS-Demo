@@ -17,3 +17,8 @@
 - 详情：https://www.jianshu.com/p/ed2eb270835c
 
 ![最终效果](https://upload-images.jianshu.io/upload_images/13640702-c1546bad63159be1.gif?imageMogr2/auto-orient/strip)
+
+# Cell with TextField
+- 很多App会有输入信息这样的功能，在做这些功能的时候会将textField放在cell上，但是如果没处理好就会出现滑动textField的文字消失的情况
+- 我们可以通过一个model把cell的index与text对应存起来，那么就可以避免这样的问题出现
+- 详情：https://www.jianshu.com/p/e450aaa2c7b6
