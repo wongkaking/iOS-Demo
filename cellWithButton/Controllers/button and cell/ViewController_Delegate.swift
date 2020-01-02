@@ -9,7 +9,7 @@ class ViewController_Delegate: UIViewController, UITableViewDataSource, UITableV
         super.viewDidLoad()
         
         view.addSubview(tableView)
-        tableView.register(TableViewCell_delegate.self, forCellReuseIdentifier: "TableViewCell_delegate")
+        tableView.register(TableViewCell_delegate.self)
         tableView.delegate = self
         tableView.dataSource = self
         tableView.tableFooterView = UIView()
@@ -22,7 +22,8 @@ class ViewController_Delegate: UIViewController, UITableViewDataSource, UITableV
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell_delegate", for: indexPath) as? TableViewCell_delegate else { return UITableViewCell() }
+//        guard let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell_delegate", for: indexPath) as? TableViewCell_delegate else { return UITableViewCell() }
+        let cell: TableViewCell_delegate = tableView.dequeueReusableCell(for: indexPath)
         cell.setupCell(content: contentArray[indexPath.row], delegate: self)
         return cell
     }

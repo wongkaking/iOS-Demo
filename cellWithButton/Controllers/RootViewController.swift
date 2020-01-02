@@ -2,7 +2,7 @@ import UIKit
 
 class RootViewController: UIViewController {
 
-    private let model = ["cell with button", "expand and check box"]
+    private let model = ["cell with button", "expand and check box", "cell with textField"]
 
     private lazy var tableView: UITableView = {
         let tableView = UITableView(frame: UIScreen.main.bounds, style: .plain)
@@ -39,6 +39,7 @@ extension RootViewController: UITableViewDelegate {
         switch indexPath.row {
         case 0: viewController = CellWithButtonTableViewController()
         case 1: viewController = ExpandViewController()
+        case 2: viewController = CellWithTextFieldTableViewController()
         default: break
         }
         if let viewController = viewController {

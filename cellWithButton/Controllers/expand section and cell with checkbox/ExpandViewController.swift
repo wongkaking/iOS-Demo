@@ -13,8 +13,8 @@ class ExpandViewController: UIViewController {
 
     private lazy var tableView: UITableView = {
         let tableView = UITableView(frame: UIScreen.main.bounds, style: .plain)
-        tableView.register(TableViewCell_checkbox.self, forCellReuseIdentifier: "TableViewCell_checkbox")
-        tableView.register(ExpandHeader.self, forHeaderFooterViewReuseIdentifier: "ExpandHeader")
+        tableView.register(TableViewCell_checkbox.self)
+        tableView.register(ExpandHeader.self)
         tableView.tableFooterView = UIView()
         tableView.delegate = self
         tableView.dataSource = self
@@ -37,7 +37,7 @@ extension ExpandViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell_checkbox", for: indexPath) as? TableViewCell_checkbox else { return UITableViewCell() }
+        let cell: TableViewCell_checkbox = tableView.dequeueReusableCell(for: indexPath)
         let section = models[indexPath.section]
         let row = section.rows[indexPath.row]
         cell.setupCell(model: row)

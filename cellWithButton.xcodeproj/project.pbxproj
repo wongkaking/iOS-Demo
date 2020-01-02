@@ -8,47 +8,53 @@
 
 /* Begin PBXBuildFile section */
 		420DDA562322679900E5BA38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420DDA552322679900E5BA38 /* AppDelegate.swift */; };
-		420DDA582322679900E5BA38 /* ViewController_Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420DDA572322679900E5BA38 /* ViewController_Delegate.swift */; };
 		420DDA5B2322679900E5BA38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 420DDA592322679900E5BA38 /* Main.storyboard */; };
 		420DDA5D2322679B00E5BA38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 420DDA5C2322679B00E5BA38 /* Assets.xcassets */; };
 		420DDA602322679B00E5BA38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 420DDA5E2322679B00E5BA38 /* LaunchScreen.storyboard */; };
-		420DDA68232267EF00E5BA38 /* TableViewCell_delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420DDA67232267EF00E5BA38 /* TableViewCell_delegate.swift */; };
-		420DDA6A2322684500E5BA38 /* SecViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420DDA692322684500E5BA38 /* SecViewController.swift */; };
-		420DDA6C23226E0500E5BA38 /* CellWithButtonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420DDA6B23226E0500E5BA38 /* CellWithButtonTableViewController.swift */; };
-		420DDA6E2322729F00E5BA38 /* ViewController_Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420DDA6D2322729F00E5BA38 /* ViewController_Block.swift */; };
-		420DDA722322756100E5BA38 /* TableViewCell_block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420DDA712322756100E5BA38 /* TableViewCell_block.swift */; };
 		42912D4C2379155F00A5A21B /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42912D4B2379155F00A5A21B /* RootViewController.swift */; };
 		42912D4E2379176100A5A21B /* ExpandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42912D4D2379176100A5A21B /* ExpandViewController.swift */; };
 		42912D50237919C700A5A21B /* TableViewCell_checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42912D4F237919C700A5A21B /* TableViewCell_checkbox.swift */; };
 		42BFAFE8237A5D1C00F7DDF2 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BFAFE7237A5D1C00F7DDF2 /* Models.swift */; };
 		42BFAFEB237A692E00F7DDF2 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BFAFEA237A692E00F7DDF2 /* UIColor+Extension.swift */; };
 		42BFAFF1237A9CAD00F7DDF2 /* ExpandHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BFAFF0237A9CAD00F7DDF2 /* ExpandHeader.swift */; };
-		49163FC123253FAD00751F05 /* ViewController_Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49163FC023253FAD00751F05 /* ViewController_Tag.swift */; };
-		49163FC32325404400751F05 /* TableViewCell_tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49163FC22325404400751F05 /* TableViewCell_tag.swift */; };
+		42C34CEB23BAE98400A3366B /* TableViewCell_block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C34CE823BAE98400A3366B /* TableViewCell_block.swift */; };
+		42C34CEC23BAE98400A3366B /* TableViewCell_tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C34CE923BAE98400A3366B /* TableViewCell_tag.swift */; };
+		42C34CED23BAE98400A3366B /* TableViewCell_delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C34CEA23BAE98400A3366B /* TableViewCell_delegate.swift */; };
+		42C34CF323BAE9AC00A3366B /* ViewController_Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C34CEE23BAE9AC00A3366B /* ViewController_Delegate.swift */; };
+		42C34CF423BAE9AC00A3366B /* ViewController_Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C34CEF23BAE9AC00A3366B /* ViewController_Tag.swift */; };
+		42C34CF523BAE9AC00A3366B /* SecViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C34CF023BAE9AC00A3366B /* SecViewController.swift */; };
+		42C34CF623BAE9AC00A3366B /* CellWithButtonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C34CF123BAE9AC00A3366B /* CellWithButtonTableViewController.swift */; };
+		42C34CF723BAE9AC00A3366B /* ViewController_Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C34CF223BAE9AC00A3366B /* ViewController_Block.swift */; };
+		42C34CFA23BAEB1100A3366B /* CellWithTextFieldTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C34CF923BAEB1100A3366B /* CellWithTextFieldTableViewController.swift */; };
+		42C34CFC23BAEBEB00A3366B /* ReuseableCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C34CFB23BAEBEB00A3366B /* ReuseableCell+Extension.swift */; };
+		42C34CFF23BAF3E100A3366B /* TableViewCell_textField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C34CFE23BAF3E100A3366B /* TableViewCell_textField.swift */; };
 		EC5AAAFD3F0AAB03E58821B1 /* Pods_cellWithButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8167C3665750A0EA0C6484C1 /* Pods_cellWithButton.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		420DDA522322679900E5BA38 /* iOS Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		420DDA552322679900E5BA38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		420DDA572322679900E5BA38 /* ViewController_Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController_Delegate.swift; sourceTree = "<group>"; };
 		420DDA5A2322679900E5BA38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		420DDA5C2322679B00E5BA38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		420DDA5F2322679B00E5BA38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		420DDA612322679B00E5BA38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		420DDA67232267EF00E5BA38 /* TableViewCell_delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell_delegate.swift; sourceTree = "<group>"; };
-		420DDA692322684500E5BA38 /* SecViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecViewController.swift; sourceTree = "<group>"; };
-		420DDA6B23226E0500E5BA38 /* CellWithButtonTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellWithButtonTableViewController.swift; sourceTree = "<group>"; };
-		420DDA6D2322729F00E5BA38 /* ViewController_Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController_Block.swift; sourceTree = "<group>"; };
-		420DDA712322756100E5BA38 /* TableViewCell_block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell_block.swift; sourceTree = "<group>"; };
 		42912D4B2379155F00A5A21B /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		42912D4D2379176100A5A21B /* ExpandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandViewController.swift; sourceTree = "<group>"; };
 		42912D4F237919C700A5A21B /* TableViewCell_checkbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell_checkbox.swift; sourceTree = "<group>"; };
 		42BFAFE7237A5D1C00F7DDF2 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		42BFAFEA237A692E00F7DDF2 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		42BFAFF0237A9CAD00F7DDF2 /* ExpandHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandHeader.swift; sourceTree = "<group>"; };
-		49163FC023253FAD00751F05 /* ViewController_Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController_Tag.swift; sourceTree = "<group>"; };
-		49163FC22325404400751F05 /* TableViewCell_tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell_tag.swift; sourceTree = "<group>"; };
+		42C34CE823BAE98400A3366B /* TableViewCell_block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewCell_block.swift; path = "button and cell/TableViewCell_block.swift"; sourceTree = "<group>"; };
+		42C34CE923BAE98400A3366B /* TableViewCell_tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewCell_tag.swift; path = "button and cell/TableViewCell_tag.swift"; sourceTree = "<group>"; };
+		42C34CEA23BAE98400A3366B /* TableViewCell_delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewCell_delegate.swift; path = "button and cell/TableViewCell_delegate.swift"; sourceTree = "<group>"; };
+		42C34CEE23BAE9AC00A3366B /* ViewController_Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController_Delegate.swift; path = "button and cell/ViewController_Delegate.swift"; sourceTree = "<group>"; };
+		42C34CEF23BAE9AC00A3366B /* ViewController_Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController_Tag.swift; path = "button and cell/ViewController_Tag.swift"; sourceTree = "<group>"; };
+		42C34CF023BAE9AC00A3366B /* SecViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecViewController.swift; path = "button and cell/SecViewController.swift"; sourceTree = "<group>"; };
+		42C34CF123BAE9AC00A3366B /* CellWithButtonTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CellWithButtonTableViewController.swift; path = "button and cell/CellWithButtonTableViewController.swift"; sourceTree = "<group>"; };
+		42C34CF223BAE9AC00A3366B /* ViewController_Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController_Block.swift; path = "button and cell/ViewController_Block.swift"; sourceTree = "<group>"; };
+		42C34CF923BAEB1100A3366B /* CellWithTextFieldTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellWithTextFieldTableViewController.swift; sourceTree = "<group>"; };
+		42C34CFB23BAEBEB00A3366B /* ReuseableCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReuseableCell+Extension.swift"; sourceTree = "<group>"; };
+		42C34CFE23BAF3E100A3366B /* TableViewCell_textField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell_textField.swift; sourceTree = "<group>"; };
 		8167C3665750A0EA0C6484C1 /* Pods_cellWithButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cellWithButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AF5F74EC47D921650E501C4 /* Pods-cellWithButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cellWithButton.debug.xcconfig"; path = "Target Support Files/Pods-cellWithButton/Pods-cellWithButton.debug.xcconfig"; sourceTree = "<group>"; };
 		8E728D00A4FB7A402C961D34 /* Pods-cellWithButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cellWithButton.release.xcconfig"; path = "Target Support Files/Pods-cellWithButton/Pods-cellWithButton.release.xcconfig"; sourceTree = "<group>"; };
@@ -112,8 +118,9 @@
 		420DDA6F2322740500E5BA38 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				42C34CFD23BAF3BC00A3366B /* textFieldCell */,
 				42BFAFE3237A5B8D00F7DDF2 /* checkboxcell */,
-				42BFAFE2237A5B7700F7DDF2 /* button and cell */,
+				42BFAFE2237A5B7700F7DDF2 /* buttonCell */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -121,21 +128,22 @@
 		420DDA702322740F00E5BA38 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				42BFAFE5237A5BCD00F7DDF2 /* expand and checkbox */,
-				42BFAFE4237A5BAB00F7DDF2 /* button and cell */,
+				42C34CF823BAEA9900A3366B /* cell with textField */,
+				42BFAFE5237A5BCD00F7DDF2 /* expand section and cell with checkbox */,
+				42BFAFE4237A5BAB00F7DDF2 /* cell with button */,
 				42912D4B2379155F00A5A21B /* RootViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		42BFAFE2237A5B7700F7DDF2 /* button and cell */ = {
+		42BFAFE2237A5B7700F7DDF2 /* buttonCell */ = {
 			isa = PBXGroup;
 			children = (
-				420DDA67232267EF00E5BA38 /* TableViewCell_delegate.swift */,
-				420DDA712322756100E5BA38 /* TableViewCell_block.swift */,
-				49163FC22325404400751F05 /* TableViewCell_tag.swift */,
+				42C34CE823BAE98400A3366B /* TableViewCell_block.swift */,
+				42C34CEA23BAE98400A3366B /* TableViewCell_delegate.swift */,
+				42C34CE923BAE98400A3366B /* TableViewCell_tag.swift */,
 			);
-			name = "button and cell";
+			name = buttonCell;
 			sourceTree = "<group>";
 		};
 		42BFAFE3237A5B8D00F7DDF2 /* checkboxcell */ = {
@@ -147,24 +155,24 @@
 			path = checkboxcell;
 			sourceTree = "<group>";
 		};
-		42BFAFE4237A5BAB00F7DDF2 /* button and cell */ = {
+		42BFAFE4237A5BAB00F7DDF2 /* cell with button */ = {
 			isa = PBXGroup;
 			children = (
-				420DDA6D2322729F00E5BA38 /* ViewController_Block.swift */,
-				420DDA572322679900E5BA38 /* ViewController_Delegate.swift */,
-				49163FC023253FAD00751F05 /* ViewController_Tag.swift */,
-				420DDA692322684500E5BA38 /* SecViewController.swift */,
-				420DDA6B23226E0500E5BA38 /* CellWithButtonTableViewController.swift */,
+				42C34CF123BAE9AC00A3366B /* CellWithButtonTableViewController.swift */,
+				42C34CF023BAE9AC00A3366B /* SecViewController.swift */,
+				42C34CF223BAE9AC00A3366B /* ViewController_Block.swift */,
+				42C34CEE23BAE9AC00A3366B /* ViewController_Delegate.swift */,
+				42C34CEF23BAE9AC00A3366B /* ViewController_Tag.swift */,
 			);
-			name = "button and cell";
+			name = "cell with button";
 			sourceTree = "<group>";
 		};
-		42BFAFE5237A5BCD00F7DDF2 /* expand and checkbox */ = {
+		42BFAFE5237A5BCD00F7DDF2 /* expand section and cell with checkbox */ = {
 			isa = PBXGroup;
 			children = (
 				42912D4D2379176100A5A21B /* ExpandViewController.swift */,
 			);
-			path = "expand and checkbox";
+			path = "expand section and cell with checkbox";
 			sourceTree = "<group>";
 		};
 		42BFAFE6237A5D0E00F7DDF2 /* Models */ = {
@@ -179,8 +187,25 @@
 			isa = PBXGroup;
 			children = (
 				42BFAFEA237A692E00F7DDF2 /* UIColor+Extension.swift */,
+				42C34CFB23BAEBEB00A3366B /* ReuseableCell+Extension.swift */,
 			);
 			name = Extension;
+			sourceTree = "<group>";
+		};
+		42C34CF823BAEA9900A3366B /* cell with textField */ = {
+			isa = PBXGroup;
+			children = (
+				42C34CF923BAEB1100A3366B /* CellWithTextFieldTableViewController.swift */,
+			);
+			path = "cell with textField";
+			sourceTree = "<group>";
+		};
+		42C34CFD23BAF3BC00A3366B /* textFieldCell */ = {
+			isa = PBXGroup;
+			children = (
+				42C34CFE23BAF3E100A3366B /* TableViewCell_textField.swift */,
+			);
+			path = textFieldCell;
 			sourceTree = "<group>";
 		};
 		E1F9C6752849BF0572CA49F7 /* Frameworks */ = {
@@ -307,19 +332,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				42BFAFF1237A9CAD00F7DDF2 /* ExpandHeader.swift in Sources */,
+				42C34CFA23BAEB1100A3366B /* CellWithTextFieldTableViewController.swift in Sources */,
+				42C34CEB23BAE98400A3366B /* TableViewCell_block.swift in Sources */,
 				42912D4E2379176100A5A21B /* ExpandViewController.swift in Sources */,
 				42912D4C2379155F00A5A21B /* RootViewController.swift in Sources */,
-				420DDA6A2322684500E5BA38 /* SecViewController.swift in Sources */,
-				420DDA68232267EF00E5BA38 /* TableViewCell_delegate.swift in Sources */,
 				42912D50237919C700A5A21B /* TableViewCell_checkbox.swift in Sources */,
-				420DDA722322756100E5BA38 /* TableViewCell_block.swift in Sources */,
-				49163FC32325404400751F05 /* TableViewCell_tag.swift in Sources */,
+				42C34CF423BAE9AC00A3366B /* ViewController_Tag.swift in Sources */,
+				42C34CF523BAE9AC00A3366B /* SecViewController.swift in Sources */,
 				42BFAFEB237A692E00F7DDF2 /* UIColor+Extension.swift in Sources */,
-				420DDA6C23226E0500E5BA38 /* CellWithButtonTableViewController.swift in Sources */,
-				420DDA6E2322729F00E5BA38 /* ViewController_Block.swift in Sources */,
-				49163FC123253FAD00751F05 /* ViewController_Tag.swift in Sources */,
+				42C34CED23BAE98400A3366B /* TableViewCell_delegate.swift in Sources */,
+				42C34CF623BAE9AC00A3366B /* CellWithButtonTableViewController.swift in Sources */,
+				42C34CF323BAE9AC00A3366B /* ViewController_Delegate.swift in Sources */,
+				42C34CF723BAE9AC00A3366B /* ViewController_Block.swift in Sources */,
 				42BFAFE8237A5D1C00F7DDF2 /* Models.swift in Sources */,
-				420DDA582322679900E5BA38 /* ViewController_Delegate.swift in Sources */,
+				42C34CFC23BAEBEB00A3366B /* ReuseableCell+Extension.swift in Sources */,
+				42C34CFF23BAF3E100A3366B /* TableViewCell_textField.swift in Sources */,
+				42C34CEC23BAE98400A3366B /* TableViewCell_tag.swift in Sources */,
 				420DDA562322679900E5BA38 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

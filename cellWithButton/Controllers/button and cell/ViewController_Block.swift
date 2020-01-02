@@ -11,7 +11,7 @@ class ViewController_Block: UIViewController, UITableViewDataSource, UITableView
         view.addSubview(tableView)
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(TableViewCell_block.self, forCellReuseIdentifier: "TableViewCell_block")
+        tableView.register(TableViewCell_block.self)
         
         navigationItem.title = "Block"
     }
@@ -21,7 +21,7 @@ class ViewController_Block: UIViewController, UITableViewDataSource, UITableView
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell_block", for: indexPath) as? TableViewCell_block else { return UITableViewCell() }
+        let cell: TableViewCell_block = tableView.dequeueReusableCell(for: indexPath)
         cell.setupCell(content: contentArray[indexPath.row])
         cell.buttonBlock = {
             let vc = SecViewController()

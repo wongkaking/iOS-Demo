@@ -9,7 +9,7 @@ class ViewController_Tag: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
         
         view.addSubview(tableView)
-        tableView.register(TableViewCell_tag.self, forCellReuseIdentifier: "TableViewCell_tag")
+        tableView.register(TableViewCell_tag.self)
         tableView.delegate = self
         tableView.dataSource = self
         tableView.tableFooterView = UIView()
@@ -22,7 +22,7 @@ class ViewController_Tag: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell_tag", for: indexPath) as? TableViewCell_tag else { return UITableViewCell() }
+        let cell: TableViewCell_tag = tableView.dequeueReusableCell(for: indexPath)
         cell.setupCell(self.contentArray[indexPath.row])
         cell.button.tag = indexPath.row
         cell.button.addTarget(self, action: #selector(didTapButton(_:)), for: .touchUpInside)
