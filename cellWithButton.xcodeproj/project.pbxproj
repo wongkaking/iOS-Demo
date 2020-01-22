@@ -44,14 +44,14 @@
 		42BFAFE7237A5D1C00F7DDF2 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		42BFAFEA237A692E00F7DDF2 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		42BFAFF0237A9CAD00F7DDF2 /* ExpandHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandHeader.swift; sourceTree = "<group>"; };
-		42C34CE823BAE98400A3366B /* TableViewCell_block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewCell_block.swift; path = "button and cell/TableViewCell_block.swift"; sourceTree = "<group>"; };
-		42C34CE923BAE98400A3366B /* TableViewCell_tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewCell_tag.swift; path = "button and cell/TableViewCell_tag.swift"; sourceTree = "<group>"; };
-		42C34CEA23BAE98400A3366B /* TableViewCell_delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewCell_delegate.swift; path = "button and cell/TableViewCell_delegate.swift"; sourceTree = "<group>"; };
-		42C34CEE23BAE9AC00A3366B /* ViewController_Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController_Delegate.swift; path = "button and cell/ViewController_Delegate.swift"; sourceTree = "<group>"; };
-		42C34CEF23BAE9AC00A3366B /* ViewController_Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController_Tag.swift; path = "button and cell/ViewController_Tag.swift"; sourceTree = "<group>"; };
-		42C34CF023BAE9AC00A3366B /* SecViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecViewController.swift; path = "button and cell/SecViewController.swift"; sourceTree = "<group>"; };
-		42C34CF123BAE9AC00A3366B /* CellWithButtonTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CellWithButtonTableViewController.swift; path = "button and cell/CellWithButtonTableViewController.swift"; sourceTree = "<group>"; };
-		42C34CF223BAE9AC00A3366B /* ViewController_Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController_Block.swift; path = "button and cell/ViewController_Block.swift"; sourceTree = "<group>"; };
+		42C34CE823BAE98400A3366B /* TableViewCell_block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell_block.swift; sourceTree = "<group>"; };
+		42C34CE923BAE98400A3366B /* TableViewCell_tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell_tag.swift; sourceTree = "<group>"; };
+		42C34CEA23BAE98400A3366B /* TableViewCell_delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell_delegate.swift; sourceTree = "<group>"; };
+		42C34CEE23BAE9AC00A3366B /* ViewController_Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController_Delegate.swift; sourceTree = "<group>"; };
+		42C34CEF23BAE9AC00A3366B /* ViewController_Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController_Tag.swift; sourceTree = "<group>"; };
+		42C34CF023BAE9AC00A3366B /* SecViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecViewController.swift; sourceTree = "<group>"; };
+		42C34CF123BAE9AC00A3366B /* CellWithButtonTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellWithButtonTableViewController.swift; sourceTree = "<group>"; };
+		42C34CF223BAE9AC00A3366B /* ViewController_Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController_Block.swift; sourceTree = "<group>"; };
 		42C34CF923BAEB1100A3366B /* CellWithTextFieldTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellWithTextFieldTableViewController.swift; sourceTree = "<group>"; };
 		42C34CFB23BAEBEB00A3366B /* ReuseableCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReuseableCell+Extension.swift"; sourceTree = "<group>"; };
 		42C34CFE23BAF3E100A3366B /* TableViewCell_textField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell_textField.swift; sourceTree = "<group>"; };
@@ -102,10 +102,11 @@
 		420DDA542322679900E5BA38 /* cellWithButton */ = {
 			isa = PBXGroup;
 			children = (
+				42D64E9923D8513A000FED93 /* cell with button */,
+				42D64E9523D850E6000FED93 /* expand section and cell with checkbox */,
+				42D64E9123D85090000FED93 /* cell with textField */,
 				42BFAFE9237A691600F7DDF2 /* Extension */,
-				42BFAFE6237A5D0E00F7DDF2 /* Models */,
-				420DDA702322740F00E5BA38 /* Controllers */,
-				420DDA6F2322740500E5BA38 /* Views */,
+				42912D4B2379155F00A5A21B /* RootViewController.swift */,
 				420DDA552322679900E5BA38 /* AppDelegate.swift */,
 				420DDA592322679900E5BA38 /* Main.storyboard */,
 				420DDA5C2322679B00E5BA38 /* Assets.xcassets */,
@@ -113,74 +114,6 @@
 				420DDA612322679B00E5BA38 /* Info.plist */,
 			);
 			path = cellWithButton;
-			sourceTree = "<group>";
-		};
-		420DDA6F2322740500E5BA38 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				42C34CFD23BAF3BC00A3366B /* textFieldCell */,
-				42BFAFE3237A5B8D00F7DDF2 /* checkboxcell */,
-				42BFAFE2237A5B7700F7DDF2 /* buttonCell */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		420DDA702322740F00E5BA38 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				42C34CF823BAEA9900A3366B /* cell with textField */,
-				42BFAFE5237A5BCD00F7DDF2 /* expand section and cell with checkbox */,
-				42BFAFE4237A5BAB00F7DDF2 /* cell with button */,
-				42912D4B2379155F00A5A21B /* RootViewController.swift */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		42BFAFE2237A5B7700F7DDF2 /* buttonCell */ = {
-			isa = PBXGroup;
-			children = (
-				42C34CE823BAE98400A3366B /* TableViewCell_block.swift */,
-				42C34CEA23BAE98400A3366B /* TableViewCell_delegate.swift */,
-				42C34CE923BAE98400A3366B /* TableViewCell_tag.swift */,
-			);
-			name = buttonCell;
-			sourceTree = "<group>";
-		};
-		42BFAFE3237A5B8D00F7DDF2 /* checkboxcell */ = {
-			isa = PBXGroup;
-			children = (
-				42912D4F237919C700A5A21B /* TableViewCell_checkbox.swift */,
-				42BFAFF0237A9CAD00F7DDF2 /* ExpandHeader.swift */,
-			);
-			path = checkboxcell;
-			sourceTree = "<group>";
-		};
-		42BFAFE4237A5BAB00F7DDF2 /* cell with button */ = {
-			isa = PBXGroup;
-			children = (
-				42C34CF123BAE9AC00A3366B /* CellWithButtonTableViewController.swift */,
-				42C34CF023BAE9AC00A3366B /* SecViewController.swift */,
-				42C34CF223BAE9AC00A3366B /* ViewController_Block.swift */,
-				42C34CEE23BAE9AC00A3366B /* ViewController_Delegate.swift */,
-				42C34CEF23BAE9AC00A3366B /* ViewController_Tag.swift */,
-			);
-			name = "cell with button";
-			sourceTree = "<group>";
-		};
-		42BFAFE5237A5BCD00F7DDF2 /* expand section and cell with checkbox */ = {
-			isa = PBXGroup;
-			children = (
-				42912D4D2379176100A5A21B /* ExpandViewController.swift */,
-			);
-			path = "expand section and cell with checkbox";
-			sourceTree = "<group>";
-		};
-		42BFAFE6237A5D0E00F7DDF2 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				42BFAFE7237A5D1C00F7DDF2 /* Models.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		42BFAFE9237A691600F7DDF2 /* Extension */ = {
@@ -192,20 +125,95 @@
 			name = Extension;
 			sourceTree = "<group>";
 		};
-		42C34CF823BAEA9900A3366B /* cell with textField */ = {
+		42D64E9123D85090000FED93 /* cell with textField */ = {
 			isa = PBXGroup;
 			children = (
-				42C34CF923BAEB1100A3366B /* CellWithTextFieldTableViewController.swift */,
+				42D64E9423D850B1000FED93 /* Controllers */,
+				42D64E9223D85095000FED93 /* Views */,
 			);
-			path = "cell with textField";
+			name = "cell with textField";
 			sourceTree = "<group>";
 		};
-		42C34CFD23BAF3BC00A3366B /* textFieldCell */ = {
+		42D64E9223D85095000FED93 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				42C34CFE23BAF3E100A3366B /* TableViewCell_textField.swift */,
 			);
-			path = textFieldCell;
+			name = Views;
+			sourceTree = "<group>";
+		};
+		42D64E9423D850B1000FED93 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				42C34CF923BAEB1100A3366B /* CellWithTextFieldTableViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		42D64E9523D850E6000FED93 /* expand section and cell with checkbox */ = {
+			isa = PBXGroup;
+			children = (
+				42D64E9823D850F9000FED93 /* Model */,
+				42D64E9723D850F3000FED93 /* Controllers */,
+				42D64E9623D850EC000FED93 /* Views */,
+			);
+			path = "expand section and cell with checkbox";
+			sourceTree = "<group>";
+		};
+		42D64E9623D850EC000FED93 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				42912D4F237919C700A5A21B /* TableViewCell_checkbox.swift */,
+				42BFAFF0237A9CAD00F7DDF2 /* ExpandHeader.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		42D64E9723D850F3000FED93 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				42912D4D2379176100A5A21B /* ExpandViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		42D64E9823D850F9000FED93 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				42BFAFE7237A5D1C00F7DDF2 /* Models.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		42D64E9923D8513A000FED93 /* cell with button */ = {
+			isa = PBXGroup;
+			children = (
+				42D64E9B23D85145000FED93 /* Controllers */,
+				42D64E9A23D85140000FED93 /* Views */,
+			);
+			path = "cell with button";
+			sourceTree = "<group>";
+		};
+		42D64E9A23D85140000FED93 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				42C34CE823BAE98400A3366B /* TableViewCell_block.swift */,
+				42C34CEA23BAE98400A3366B /* TableViewCell_delegate.swift */,
+				42C34CE923BAE98400A3366B /* TableViewCell_tag.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		42D64E9B23D85145000FED93 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				42C34CF123BAE9AC00A3366B /* CellWithButtonTableViewController.swift */,
+				42C34CF023BAE9AC00A3366B /* SecViewController.swift */,
+				42C34CF223BAE9AC00A3366B /* ViewController_Block.swift */,
+				42C34CEE23BAE9AC00A3366B /* ViewController_Delegate.swift */,
+				42C34CEF23BAE9AC00A3366B /* ViewController_Tag.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		E1F9C6752849BF0572CA49F7 /* Frameworks */ = {
