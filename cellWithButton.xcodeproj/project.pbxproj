@@ -102,10 +102,10 @@
 		420DDA542322679900E5BA38 /* cellWithButton */ = {
 			isa = PBXGroup;
 			children = (
-				42D64E9923D8513A000FED93 /* cell with button */,
-				42D64E9523D850E6000FED93 /* expand section and cell with checkbox */,
-				42D64E9123D85090000FED93 /* cell with textField */,
-				42BFAFE9237A691600F7DDF2 /* Extension */,
+				42D64E9D23D85306000FED93 /* Cell with textField */,
+				42D64E9C23D852EA000FED93 /* Extension */,
+				42D64E9923D8513A000FED93 /* Cell with button */,
+				42D64E9523D850E6000FED93 /* Expand section and cell with checkbox */,
 				42912D4B2379155F00A5A21B /* RootViewController.swift */,
 				420DDA552322679900E5BA38 /* AppDelegate.swift */,
 				420DDA592322679900E5BA38 /* Main.storyboard */,
@@ -116,48 +116,14 @@
 			path = cellWithButton;
 			sourceTree = "<group>";
 		};
-		42BFAFE9237A691600F7DDF2 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				42BFAFEA237A692E00F7DDF2 /* UIColor+Extension.swift */,
-				42C34CFB23BAEBEB00A3366B /* ReuseableCell+Extension.swift */,
-			);
-			name = Extension;
-			sourceTree = "<group>";
-		};
-		42D64E9123D85090000FED93 /* cell with textField */ = {
-			isa = PBXGroup;
-			children = (
-				42D64E9423D850B1000FED93 /* Controllers */,
-				42D64E9223D85095000FED93 /* Views */,
-			);
-			name = "cell with textField";
-			sourceTree = "<group>";
-		};
-		42D64E9223D85095000FED93 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				42C34CFE23BAF3E100A3366B /* TableViewCell_textField.swift */,
-			);
-			name = Views;
-			sourceTree = "<group>";
-		};
-		42D64E9423D850B1000FED93 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				42C34CF923BAEB1100A3366B /* CellWithTextFieldTableViewController.swift */,
-			);
-			name = Controllers;
-			sourceTree = "<group>";
-		};
-		42D64E9523D850E6000FED93 /* expand section and cell with checkbox */ = {
+		42D64E9523D850E6000FED93 /* Expand section and cell with checkbox */ = {
 			isa = PBXGroup;
 			children = (
 				42D64E9823D850F9000FED93 /* Model */,
 				42D64E9723D850F3000FED93 /* Controllers */,
 				42D64E9623D850EC000FED93 /* Views */,
 			);
-			path = "expand section and cell with checkbox";
+			path = "Expand section and cell with checkbox";
 			sourceTree = "<group>";
 		};
 		42D64E9623D850EC000FED93 /* Views */ = {
@@ -185,13 +151,13 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		42D64E9923D8513A000FED93 /* cell with button */ = {
+		42D64E9923D8513A000FED93 /* Cell with button */ = {
 			isa = PBXGroup;
 			children = (
 				42D64E9B23D85145000FED93 /* Controllers */,
 				42D64E9A23D85140000FED93 /* Views */,
 			);
-			path = "cell with button";
+			path = "Cell with button";
 			sourceTree = "<group>";
 		};
 		42D64E9A23D85140000FED93 /* Views */ = {
@@ -214,6 +180,40 @@
 				42C34CEF23BAE9AC00A3366B /* ViewController_Tag.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		42D64E9C23D852EA000FED93 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				42BFAFEA237A692E00F7DDF2 /* UIColor+Extension.swift */,
+				42C34CFB23BAEBEB00A3366B /* ReuseableCell+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		42D64E9D23D85306000FED93 /* Cell with textField */ = {
+			isa = PBXGroup;
+			children = (
+				42D64E9F23D8531A000FED93 /* Views */,
+				42D64E9E23D8530C000FED93 /* Controllers */,
+			);
+			path = "Cell with textField";
+			sourceTree = "<group>";
+		};
+		42D64E9E23D8530C000FED93 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				42C34CF923BAEB1100A3366B /* CellWithTextFieldTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		42D64E9F23D8531A000FED93 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				42C34CFE23BAF3E100A3366B /* TableViewCell_textField.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		E1F9C6752849BF0572CA49F7 /* Frameworks */ = {
