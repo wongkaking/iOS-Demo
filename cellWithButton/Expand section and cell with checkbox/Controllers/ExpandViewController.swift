@@ -1,16 +1,9 @@
 import UIKit
 
 class ExpandViewController: UIViewController {
-
-    let models: [CheckBoxSection] = [CheckBoxSection(expand: true, section: "iPhone", rows: [CheckBoxRow(text: "iPhone 11", isChecked: false),
-                                                                                             CheckBoxRow(text: "iPhone 11 Max", isChecked: false),
-                                                                                             CheckBoxRow(text: "iPhone 11 Max Pro", isChecked: false),
-                                                                                             CheckBoxRow(text: "iPhone X Max Pro", isChecked: false)]),
-                                     CheckBoxSection(expand: true, section: "Mac", rows: [CheckBoxRow(text: "MacBook Air", isChecked: false),
-                                                     CheckBoxRow(text: "MacBook", isChecked: false),
-                                                     CheckBoxRow(text: "MacBook Pro", isChecked: false)])]
-
-
+    
+    private let viewModel = ExpandAndCheckBoxViewModel()
+    
     private lazy var tableView: UITableView = {
         let tableView = UITableView(frame: UIScreen.main.bounds, style: .plain)
         tableView.register(TableViewCell_checkbox.self)
@@ -29,16 +22,16 @@ class ExpandViewController: UIViewController {
 
 extension ExpandViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return models[section].expand ? models[section].rows.count : 0
+        return viewModel.models[section].expand ? viewModel.models[section].rows.count : 0
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {
-        return models.count
+        return viewModel.models.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: TableViewCell_checkbox = tableView.dequeueReusableCell(for: indexPath)
-        let section = models[indexPath.section]
+        let section = viewModel.models[indexPath.section]
         let row = section.rows[indexPath.row]
         cell.setupCell(model: row)
         return cell
@@ -48,10 +41,7 @@ extension ExpandViewController: UITableViewDataSource {
 extension ExpandViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell = TableViewCell_checkbox()
-        let model = models[indexPath.section]
-        let row = model.rows[indexPath.row]
-        row.isChecked = !row.isChecked
-        cell.isChecked = row.isChecked
+        cell.isChecked = viewModel.changeState(indexPath: indexPath)
         tableView.performBatchUpdates({
             tableView.reloadRows(at: [indexPath], with: .automatic)
         }, completion: nil)
@@ -67,7 +57,7 @@ extension ExpandViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         guard let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "ExpandHeader") as? ExpandHeader else { return nil }
-        let model = models[section]
+        let model = viewModel.models[section]
         header.setHeaderTitle(model.section)
         header.section = section
         header.delegate = self
@@ -78,7 +68,7 @@ extension ExpandViewController: UITableViewDelegate {
 
 extension ExpandViewController: ExpandHeaderDelegate {
     func didTapSection(header: ExpandHeader, section: Int) {
-        models[section].expand = !models[section].expand
+        viewModel.models[section].expand = !viewModel.models[section].expand
         tableView.reloadSections([section], with: .automatic)
     }
 }
