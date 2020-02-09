@@ -22,11 +22,11 @@ class ExpandViewController: UIViewController {
 
 extension ExpandViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.models[section].expand ? viewModel.models[section].rows.count : 0
+        return viewModel.getCountForRows(section: section)
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {
-        return viewModel.models.count
+        return viewModel.getCountForSections()
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -58,17 +58,17 @@ extension ExpandViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         guard let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "ExpandHeader") as? ExpandHeader else { return nil }
         let model = viewModel.models[section]
-        header.setHeaderTitle(model.section)
-        header.section = section
-        header.delegate = self
-        header.isExpand = model.expand
+        header.setHeaderTitle(model.section,
+                              delegate: self,
+                              section: section,
+                              isExpand: model.expand)
         return header
     }
 }
 
 extension ExpandViewController: ExpandHeaderDelegate {
     func didTapSection(header: ExpandHeader, section: Int) {
-        viewModel.models[section].expand = !viewModel.models[section].expand
+        viewModel.changeExpand(section: section)
         tableView.reloadSections([section], with: .automatic)
     }
 }

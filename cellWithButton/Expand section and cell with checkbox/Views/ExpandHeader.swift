@@ -62,7 +62,13 @@ class ExpandHeader: UITableViewHeaderFooterView {
         delegate?.didTapSection(header: self, section: header.section)
     }
 
-    func setHeaderTitle(_ title: String) {
+    func setHeaderTitle(_ title: String,
+                        delegate: ExpandHeaderDelegate,
+                        section: Int,
+                        isExpand: Bool) {
+        self.delegate = delegate
+        self.section = section
+        self.isExpand = isExpand
         sectionLabel.text = title.uppercased()
     }
 }

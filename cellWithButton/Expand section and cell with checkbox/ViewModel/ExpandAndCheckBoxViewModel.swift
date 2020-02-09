@@ -15,6 +15,19 @@ class ExpandAndCheckBoxViewModel {
     func changeState(indexPath: IndexPath) -> Bool {
         let model = models[indexPath.section]
         let row = model.rows[indexPath.row]
-        return !row.isChecked
+        row.isChecked = !row.isChecked
+        return row.isChecked
+    }
+    
+    func changeExpand(section: Int) {
+        models[section].expand = !models[section].expand
+    }
+    
+    func getCountForRows(section: Int) -> Int {
+        return models[section].expand ? models[section].rows.count : 0
+    }
+    
+    func getCountForSections() -> Int {
+        return models.count
     }
 }
