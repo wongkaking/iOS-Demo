@@ -15,6 +15,8 @@
 - 通过Checkbox来表示是否选择
 - 每个分类的Section可以收起或展开
 - 详情：https://www.jianshu.com/p/ed2eb270835c
+- 优化引入MVVM：https://www.jianshu.com/p/67ed133cee4f
+- 优化为VC瘦身：https://www.jianshu.com/p/15ffd8bbdabb
 
 ![最终效果](https://upload-images.jianshu.io/upload_images/13640702-c1546bad63159be1.gif?imageMogr2/auto-orient/strip)
 
